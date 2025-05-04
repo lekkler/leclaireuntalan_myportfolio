@@ -273,7 +273,14 @@ section {
     color: #000000; /* Black text */
     border: 3px solid #000000; /* Black border */
 }
+/* Specific Color for GitHub Icon */
+.social-media a:nth-child(4) { /* GitHub */
+    background-color: #333; /* GitHub's default color */
+}
 
+.social-media a:nth-child(4):hover {
+    background-color: #6e5494; /* GitHub's hover color */
+}
 
 
 
@@ -912,43 +919,37 @@ section {
 }
 
 .gallery-grid {
-    display: flex; /* Change from grid to flexbox */
-    flex-wrap: wrap; /* Allow wrapping if there are multiple projects */
-    justify-content: center; /* Center the projects horizontally */
-    gap: 30px; /* Add spacing between projects */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     margin-top: 50px;
 }
 
 .gallery-item {
-    width: 100%; /* Make the container take full width */
-    max-width: 400px; /* Set a maximum width for the rectangle */
-    height: 250px; /* Set a fixed height for the rectangle */
-    border-radius: 10px; /* Add rounded corners */
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow for a polished look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-color); /* Optional: Add a background color */
+    background-color: var(--light-color);
 }
 
 .gallery-item img {
-    width: 100%; /* Ensure the image takes the full width of the container */
-    height: 100%; /* Ensure the image fills the container */
-    object-fit: cover; /* Crop the image to fit the container */
-    border-radius: 10px; /* Add rounded corners */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .gallery-item:hover {
     transform: scale(1.03);
-}
-.dtr-pr img {
-    width: 100%; /* Ensure the image takes the full width of the container */
-    height: 100%; /* Ensure the image fills the container */
-    object-fit: cover; /* Crop the image to fit the container */
-    border-radius: 10px; /* Add rounded corners */
 }
 
 .gallery-overlay {
@@ -996,7 +997,6 @@ section {
 .view-btn:hover {
     background-color: #9c64cf;
 }
-
 
 
 
